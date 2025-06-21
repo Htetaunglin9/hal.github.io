@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <!-- Scrollable Form Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- ✅ List Type Spinner -->
+            <Spinner
+                android:id="@+id/spnListType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ✅ Year Picker -->
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ခုနှစ် (ဥပမာ 2025)"
+                android:focusable="false"
+                android:inputType="none"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ✅ Road Spinner -->
+            <Spinner
+                android:id="@+id/spnRoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ✅ Multi-entry Text -->
+            <EditText
+                android:id="@+id/etMultiEntries"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="top"
+                android:hint="e.g. 3M.5128(22w) 1/6"
+                android:background="@android:drawable/edit_text"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp"/>
+            <!-- Preview -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔍 Preview"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- ✅ Preview RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ✅ Fixed Save Button at Bottom -->
+    <Button
+        android:id="@+id/btnSaveBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="သိမ်းမည်"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

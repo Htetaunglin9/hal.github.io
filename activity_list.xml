@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exportContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="60dp"> <!-- space for button -->
+
+        <TextView
+            android:id="@+id/tvPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black စာရင်း 1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total = 0 Ks"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExportImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📸 Export JPEG"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+</FrameLayout>
