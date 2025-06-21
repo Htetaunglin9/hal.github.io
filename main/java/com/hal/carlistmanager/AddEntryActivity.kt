@@ -35,7 +35,7 @@ class AddEntryActivity : AppCompatActivity() {
 
         val wheelsOptions = listOf(6, 10, 12, 22)
         val listTypeOptions = listOf("Black", "ဂျူတီ")
-        val roadOptions = listOf("ရန်ကုန်", "မန္တလေး", "နေပြည်တော်") // Spinner 3 options
+        val roadOptions = listOf("2", "3", ) // Spinner 3 options
 
         spnWheels.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, wheelsOptions)
         spnListType.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listTypeOptions)
