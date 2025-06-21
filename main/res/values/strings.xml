@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CarlistManager</string>
+    <string name="prompt_select_road">လမ်းရွေးပါ</string>
+        <string name="remove_mode">🗑 ဖျက်မည်</string>
+        <string name="cancel_remove_mode">✔ ပြန်ဖျက်မည်</string>
+        <string name="export_jpeg">🖼 Export JPEG</string>
+        <string name="generate_summary">📊 စုစုပေါင်းတွက်မည်</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#E0E0E0">
+
+    <!-- Column 1: No -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="No."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Column 2: Date -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:text="Date"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Column 3: Car No -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="Car No"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Column 4: Wheels -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="ဘီး"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Column 5: Road -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:text="လမ်း"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Column 6: Fee -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="ဂိတ်ကြေး"
+        android:gravity="right|center_vertical"
+        android:paddingRight="8dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#000000"
+    android:minHeight="50dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/containerSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 📅 Date Range -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etFromDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="From Date"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" မှ "
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etToDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="To Date"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- ➕ Manual Entry Inputs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etCustomName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="အမည်"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text" />
+
+            <EditText
+                android:id="@+id/etCustomAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="ငွေ"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- ➕ Add Row -->
+        <Button
+            android:id="@+id/btnAddCustomRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➕ ထည့်မည်"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 🗑 Toggle Remove Mode & 🖼 Export JPEG -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnToggleRemoveMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🗑 ဖျက်မည်" />
+
+            <Button
+                android:id="@+id/btnExportJPEG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🖼 EXPORT JPEG" />
+        </LinearLayout>
+
+        <!-- 📊 Generate Summary -->
+        <Button
+            android:id="@+id/btnGenerateSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 စုစုပေါင်းတွက်မည်"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ✅ Summary Table Container (For Export Only) -->
+        <LinearLayout
+            android:id="@+id/summaryTableContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

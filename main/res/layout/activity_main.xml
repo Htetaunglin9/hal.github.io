@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnBatchEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batch Entry ထည့်မည်"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnAddEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="စာရင်းအသစ်ထည့်မည်" />
+
+        <Button
+            android:id="@+id/btnSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary ကြည့်မည်"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:text="Black Pages"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/containerPagesBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="ဂျူတီ Pages"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/containerPagesDuty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
